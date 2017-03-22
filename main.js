@@ -14,7 +14,7 @@ $(document).ready(function(){
                       <div class='media-object'>${post.user.photo}</div>
                       <p class='media-body'><small>${post.body}</small></p>
                       <p><small>${post.user.name}</small></p>
-                      <p><small>${post.created_at}</small></p>
+                      <p><small>${moment(post.created_at).format('MMM Do YYYY, hh:mm:ss a')}</small></p>
                       </div>
                     </div>
                   </div>
